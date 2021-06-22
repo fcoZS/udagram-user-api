@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-user-service
+  labels:
+    app: my-user-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-user-service
+  template:
+    metadata:
+      labels:
+        app: my-user-service
+    spec:
+      containers:
+        - name: udagram-user-service
+          image: frcozuniga/udagram-user-service
+          ports:
+            - containerPort: 80
