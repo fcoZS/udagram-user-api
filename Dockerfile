@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 8080
 
 # Define Docker’s behavior when the image is run
-CMD ["node", "run", "prod"]
+CMD ["npm", "run", "prod"]
