@@ -65,14 +65,4 @@ spec:
                 configMapKeyRef:
                   name: env-config
                   key: JWT_SECRET
-            - name: POSTGRESS_DB
-              valueFrom:
-                configMapKeyRef:
-                  name: env-config
-                  key: POSTGRESS_DB
-            - name: POSTGRESS_HOST
-              valueFrom:
-                configMapKeyRef:
-                  name: env-config
-                  key: POSTGRESS_HOST
 
