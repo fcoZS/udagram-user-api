@@ -19,9 +19,6 @@ spec:
           image: frcozuniga/udagram-user-service
           ports:
             - containerPort: 80
-          resources:
-            requests:
-              cpu: "100m"
           env:
             - name: URL
               valueFrom:
